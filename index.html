@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Day 2026 - Mario Lopez</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .text-tigo-blue {
+            color: #00377B;
+        }
+        .bg-tigo-blue {
+            background-color: #00377B;
+            color: #ffffff !important;
+        }
+        .tech-day-logo {
+            font-weight: 900;
+            font-size: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+        .tech-box {
+            background-color: #00377B;
+            color: #ffffff;
+            padding: 0px 6px;
+            border-radius: 3px;
+            margin-right: 2px;
+        }
+        .day-box {
+            border: 2px solid #00377B;
+            color: #00377B;
+            padding: 0px 6px;
+            border-radius: 3px;
+        }
+        .hero-section {
+            padding: 5rem 0;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .profile-img-container {
+            position: relative;
+            display: inline-block;
+        }
+        .profile-img {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 12px;
+            border: 2px solid rgba(0, 55, 123, 0.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 2;
+        }
+        .profile-img-container::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: 10px;
+            bottom: 10px;
+            border: 2px solid #00377B;
+            border-radius: 12px;
+            z-index: 1;
+        }
+        .badge-custom {
+            background-color: #e9ecef;
+            color: #495057;
+            border: 1px solid #ced4da;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 8px 12px;
+        }
+        
+        /* Estilos para el submenú de cursos (Tabs) */
+        .nav-pills .nav-link {
+            color: #00377B;
+            font-weight: 600;
+            border: 1px solid #00377B;
+            margin: 0 5px 10px 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .nav-pills .nav-link:hover {
+            background-color: rgba(0, 55, 123, 0.05);
+        }
+        .nav-pills .nav-link.active {
+            background-color: #00377B;
+            color: #ffffff;
+            border-color: #00377B;
+        }
+        .course-item {
+            transition: all 0.2s ease;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            text-decoration: none;
+        }
+        .course-item:hover {
+            border-color: #00377B;
+            background-color: #f8f9fa;
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-light border-bottom bg-white">
+        <div class="container py-2">
+            <a class="navbar-brand text-decoration-none" href="#">
+                <span class="tech-day-logo">
+                    <span class="tech-box">Tech</span><span class="day-box">Day</span> <span class="text-tigo-blue ms-2">2026</span>
+                </span>
+            </a>
+            <div class="d-none d-md-block text-muted small">
+                Main Sponsor: <span class="text-tigo-blue fw-bold fs-6">tigo</span> <span class="text-dark">business</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="hero-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                
+                <!-- Presentación Info -->
+                <div class="col-lg-7 order-2 order-lg-1 mt-5 mt-lg-0">
+                    <div class="mb-4 d-flex flex-wrap gap-2">
+                        <span class="badge badge-custom">📅 28 de Julio, 2026</span>
+                        <span class="badge badge-custom">⏱️ 11:10 - 11:35</span>
+                        <span class="badge badge-custom">📍 Salón Tech Solutions</span>
+                    </div>
+
+                    <h1 class="fw-bold display-5 mb-4 lh-sm text-dark">
+                        Más Allá de la IA: <br>
+                        <span class="text-tigo-blue">"Del asistente inteligente a la transformación del Negocio"</span>
+                    </h1>
+                    
+                    <p class="lead mb-4" style="color: #4f4f4f; font-size: 1.15rem; line-height: 1.6;">
+                        La IA ya no es solo un asistente inteligente; es el catalizador de la transformación empresarial. 
+                        Descubra cómo la ciberseguridad, la nube y los servicios administrados impulsan operaciones 
+                        más seguras, ágiles y eficientes para acelerar la innovación y el crecimiento.
+                    </p>
+
+                    <div class="mt-5 p-4 rounded-3 bg-white" style="border-left: 4px solid #00377B; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                        <h4 class="mb-1 fw-bold text-dark">Mario Lopez</h4>
+                        <p class="mb-0 text-tigo-blue fw-semibold">B2B Cloud And Cybersecurity Chief en TIGO</p>
+                        <p class="text-muted small mt-2 mb-0">
+                            Lidera la estrategia B2B de ciberseguridad en Millicom (Tigo El Salvador), con más de 16 años de experiencia en infraestructura y seguridad digital.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Foto Mario Lopez -->
+                <div class="col-lg-4 order-1 order-lg-2 text-center text-lg-end">
+                    <div class="profile-img-container">
+                        <img src="./mario-lopez.jpeg" alt="Mario Lopez" class="profile-img img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Recursos Section (Submenú de Cursos) -->
+    <section class="container py-5 mt-4 mb-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold h1 text-dark">Continúa tu ruta en <span class="text-tigo-blue">Inteligencia Artificial</span></h2>
+            <p class="text-muted fs-5">Rutas oficiales y cursos recomendados para impulsar tus habilidades tecnológicas.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- Submenú de navegación -->
+                <ul class="nav nav-pills justify-content-center mb-4" id="ai-courses-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="microsoft-tab" data-bs-toggle="pill" data-bs-target="#microsoft" type="button" role="tab" aria-selected="true">Microsoft Learn</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="google-tab" data-bs-toggle="pill" data-bs-target="#google" type="button" role="tab" aria-selected="false">Google Cloud</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="platzi-tab" data-bs-toggle="pill" data-bs-target="#platzi" type="button" role="tab" aria-selected="false">Platzi</button>
+                    </li>
+                </ul>
+
+                <!-- Contenido de las pestañas -->
+                <div class="tab-content bg-white p-4 rounded-3 border" id="ai-courses-tabContent" style="box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
+                    
+                    <!-- Microsoft Learn Tab -->
+                    <div class="tab-pane fade show active" id="microsoft" role="tabpanel" aria-labelledby="microsoft-tab">
+                        <div class="list-group list-group-flush">
+                            <!-- Microsoft Course 1 -->
+                            <a href="https://learn.microsoft.com/es-es/credentials/certifications/azure-ai-fundamentals/" target="_blank" class="list-group-item list-group-item-action course-item p-3 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1 fw-bold text-tigo-blue">Certificación: Azure AI Fundamentals (AI-900)</h5>
+                                    <p class="mb-0 text-muted small">Valide sus conocimientos básicos sobre inteligencia artificial y aprenda cómo se aplican los servicios cognitivos dentro del ecosistema de Microsoft Azure.</p>
+                                </div>
+                                <span class="badge bg-tigo-blue rounded-pill ms-3 text-nowrap">Ir a certificación</span>
+                            </a>
+                            <!-- Microsoft Course 2 -->
+                            <a href="https://learn.microsoft.com/es-es/credentials/certifications/azure-ai-engineer/" target="_blank" class="list-group-item list-group-item-action course-item p-3 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1 fw-bold text-tigo-blue">Certificación: Azure AI Engineer Associate (AI-102)</h5>
+                                    <p class="mb-0 text-muted small">Aprenda a diseñar e implementar modelos de lenguaje a gran escala y soluciones de IA generativa para infraestructura empresarial.</p>
+                                </div>
+                                <span class="badge bg-tigo-blue rounded-pill ms-3 text-nowrap">Ir a certificación</span>
+                            </a>
+                            <!-- Microsoft Course 3 -->
+                            <a href="https://learn.microsoft.com/es-es/training/browse/?subjects=artificial-intelligence" target="_blank" class="list-group-item list-group-item-action course-item p-3 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1 fw-bold text-tigo-blue">Catálogo completo de Inteligencia Artificial en Microsoft</h5>
+                                    <p class="mb-0 text-muted small">Explora cientos de módulos gratuitos sobre Microsoft 365 Copilot, Azure OpenAI y Machine Learning corporativo.</p>
+                                </div>
+                                <span class="badge bg-tigo-blue rounded-pill ms-3 text-nowrap">Explorar catálogo</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Google Cloud Tab -->
+                    <div class="tab-pane fade" id="google" role="tabpanel" aria-labelledby="google-tab">
+                        <div class="list-group list-group-flush">
+                            <!-- Google Course 1 -->
+                            <a href="https://cloud.google.com/training/ai?hl=es" target="_blank" class="list-group-item list-group-item-action course-item p-3 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1 fw-bold text-tigo-blue">Centro de Capacitación en IA de Google Cloud</h5>
+                                    <p class="mb-0 text-muted small">Accede a las rutas de aprendizaje oficiales para comprender la IA generativa y cómo aplicar las herramientas empresariales de Google.</p>
+                                </div>
+                                <span class="badge bg-tigo-blue rounded-pill ms-3 text-nowrap">Ir al centro de IA</span>
+                            </a>
+                            <!-- Google Course 2 -->
+                            <a href="https://developers.google.com/machine-learning/crash-course?hl=es-419" target="_blank" class="list-group-item list-group-item-action course-item p-3 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1 fw-bold text-tigo-blue">Machine Learning Crash Course</h5>
+                                    <p class="mb-0 text-muted small">Un curso intensivo introductorio de Google con lecciones en video, preguntas de práctica y ejercicios prácticos de desarrollo de modelos.</p>
+                                </div>
+                                <span class="badge bg-tigo-blue rounded-pill ms-3 text-nowrap">Iniciar curso</span>
+                            </a>
+                            <!-- Google Course 3 -->
+                            <a href="https://www.cloudskillsboost.google/catalog?search=Gemini" target="_blank" class="list-group-item list-group-item-action course-item p-3 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1 fw-bold text-tigo-blue">Catálogo de laboratorios: Google Gemini</h5>
+                                    <p class="mb-0 text-muted small">Explora sin necesidad de registro previo todos los laboratorios y módulos sobre el uso de Gemini en la consola de Google Cloud.</p>
+                                </div>
+                                <span class="badge bg-tigo-blue rounded-pill ms-3 text-nowrap">Ver laboratorios</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Platzi Tab -->
+                    <div class="tab-pane fade" id="platzi" role="tabpanel" aria-labelledby="platzi-tab">
+                        <div class="list-group list-group-flush">
+                            <!-- Platzi Course 1 -->
+                            <a href="https://platzi.com/buscar/?search=Inteligencia+Artificial" target="_blank" class="list-group-item list-group-item-action course-item p-3 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1 fw-bold text-tigo-blue">Cursos de Fundamentos de Inteligencia Artificial</h5>
+                                    <p class="mb-0 text-muted small">Domina las bases teóricas y prácticas para entender cómo funciona la IA y cómo está transformando el desarrollo y los negocios hoy en día.</p>
+                                </div>
+                                <span class="badge bg-tigo-blue rounded-pill ms-3 text-nowrap">Explorar IA</span>
+                            </a>
+                            <!-- Platzi Course 2 -->
+                            <a href="https://platzi.com/buscar/?search=Prompt+Engineering" target="_blank" class="list-group-item list-group-item-action course-item p-3 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1 fw-bold text-tigo-blue">Cursos de Prompt Engineering y ChatGPT</h5>
+                                    <p class="mb-0 text-muted small">Aprende a comunicarte de manera efectiva con los modelos de lenguaje (LLMs) para automatizar tareas y optimizar procesos corporativos.</p>
+                                </div>
+                                <span class="badge bg-tigo-blue rounded-pill ms-3 text-nowrap">Explorar Prompts</span>
+                            </a>
+                            <!-- Platzi Course 3 -->
+                            <a href="https://platzi.com/buscar/?search=Google+Gemini" target="_blank" class="list-group-item list-group-item-action course-item p-3 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1 fw-bold text-tigo-blue">Aprende sobre Google Gemini</h5>
+                                    <p class="mb-0 text-muted small">Explora el modelo multimodal de Google para crear contenido, analizar información compleja y mejorar flujos de trabajo de infraestructura.</p>
+                                </div>
+                                <span class="badge bg-tigo-blue rounded-pill ms-3 text-nowrap">Explorar Gemini</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 mt-auto border-top bg-light">
+        <div class="container text-center">
+            <p class="mb-0 text-muted small">
+                &copy; 2026 Tech Day El Salvador | Presentado por Tigo Business y Mario Lopez.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
