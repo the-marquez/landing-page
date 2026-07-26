@@ -42,13 +42,19 @@
             background-color: #f8f9fa;
             border-bottom: 1px solid #e9ecef;
         }
+        
+        /* Ajustes clave para que cualquier foto se vea bien */
         .profile-img-container {
             position: relative;
             display: inline-block;
+            width: 100%;
+            max-width: 320px;
         }
         .profile-img {
             width: 100%;
-            max-width: 320px;
+            aspect-ratio: 4 / 5; /* Fuerza un formato de retrato vertical */
+            object-fit: cover; /* Recorta la imagen sobrante sin deformarla */
+            object-position: center 10%; /* Enfoca un poco más arriba para centrar la cara */
             border-radius: 12px;
             border: 2px solid rgba(0, 55, 123, 0.1);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -158,6 +164,7 @@
                 <!-- Foto Mario Lopez -->
                 <div class="col-lg-4 order-1 order-lg-2 text-center text-lg-end">
                     <div class="profile-img-container">
+                        <!-- Mismo src, el CSS hace el trabajo de recortarla perfecto -->
                         <img src="./mario-lopez.jpeg" alt="Mario Lopez" class="profile-img img-fluid">
                     </div>
                 </div>
